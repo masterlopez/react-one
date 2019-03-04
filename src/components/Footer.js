@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function Footer() {
-  return(
-    <footer>Javier Lopez 2019</footer>
-  )
-
+  const date = new Date();
+  const year = date.getFullYear();
+  return <footer>Javier Lopez {year}</footer>;
 }
-export default Footer
+export default Footer;
