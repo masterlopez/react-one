@@ -2,10 +2,10 @@ import React from "react";
 
 import "./components/style.css";
 
-// function App2() {
+// function App2(props) {
 //   return (
 //     <div>
-//       <h1>Hiya!</h1>
+//       <h1>Hiya! {props.whatever}</h1>
 //     </div>
 //   );
 // }
@@ -15,7 +15,7 @@ class App2 extends React.Component {
   render() {
     return (
       <div>
-        <h1>Class based components</h1>
+        <h1>Class based components {this.props.whatever}</h1>
       </div>
     );
   }
