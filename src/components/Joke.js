@@ -3,12 +3,13 @@ import React from "react";
 function Joke(props) {
   return (
     <div>
-      <p style={{ display: !props.haha.question && "none" }}>
-        Question: {props.haha.question}
+      <p style={{ display: !props.question && "none" }}>
+        Question: {props.question}
       </p>
-      <p style={{ color: !props.haha.question && "#888888" }}>
-        Punchline: {props.haha.punchline}
+      <p style={{ color: !props.question && "#888888" }}>
+        Punchline: {props.punchline}
       </p>
+      <br />
     </div>
   );
 }

@@ -17,7 +17,7 @@ const jokesData = [
   {
     id: 4,
     punchline:
-      "The chicken crossed the road since there was free corn on the other side."
+      "It's hard to explain puns to kleptomaniacs because they always take things literally."
   }
 ];
 
