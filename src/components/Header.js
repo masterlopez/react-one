@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./style.css";
 
 function Header() {
-  return(
-    <nav>Home | Story | About</nav>
-  )
+  return (
+    <div className="header">
+      <nav>Home | Story | About</nav>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Header />
-      <ContactCard
+      {/* <ContactCard
         contact={{
           name: "Mr. Catus",
           imgURL: "http://placekitten.com/300/200",
@@ -27,7 +27,7 @@ function App() {
           phone: "7894561230",
           email: "gh@ch.com"
         }}
-      />
+      /> */}
       {/* <ContactCard
         name="Mrs. Achoo"
         imgURL="http://placekitten.com/300/200"
@@ -41,16 +41,21 @@ function App() {
         email="rew@ty.com"
       /> */}
       <hr />
-      <Joke haha={{ question: "Why?", punchline: "Because!" }} />
-      <Joke haha={{ question: "Knock knock", punchline: "On Wood!" }} />
+      <Joke haha={{ question: "Why?", punchline: "Because!" }} /> <br />
+      <Joke haha={{ question: "Knock knock", punchline: "On Wood!" }} /> <br />
       <Joke
         haha={{
           question: "Chicken or Lasagna?",
           punchline: "None are available!"
         }}
+      />{" "}
+      <br />
+      <Joke
+        haha={{
+          punchline:
+            "The chicken crossed the road since there was free corn on the other side."
+        }}
       />
-      <Joke haha={{ punchline: "Because!" }} />
-
       <hr />
       <div className="todo-list">
         <TodoItem />
