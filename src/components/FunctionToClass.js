@@ -7,7 +7,8 @@ import ReactDOM from "react-dom";
 function App() {
   return (
     <div>
-      <h1>Numero 1</h1>
+      <Header username="JL" />
+      <Greeting />
     </div>
   );
 }
@@ -16,7 +17,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Numero uno</h1>
+        <Header username="JL" />
+        <Greeting />
       </div>
     );
   }
@@ -42,3 +44,29 @@ class Header extends React.Component {
 }
 
 // #3
+function Greeting() {
+  const date = new Date();
+  const hours = date.getHours();
+  let timeOfDay;
+
+  if (hours < 12) {
+    timeOfDay = "morning";
+  }
+
+  return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
+}
+
+class Greeting extends React.Component {
+  render() {
+    const date = new Date();
+    const hours = date.getHours();
+    let timeOfDay;
+
+    if (hours < 12) {
+      timeOfDay = "morning";
+    }
+    return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
