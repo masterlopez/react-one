@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Conditional from "Conditional";
+import Conditional from "./components/Conditional";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor() {
@@ -20,7 +22,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Conditional isLoading={this.state.isLoading} />
+        <Header />
+        {this.state.isLoading ? <h1>Loading...</h1> : <Conditional />}
+        <Footer />
       </div>
     );
   }
